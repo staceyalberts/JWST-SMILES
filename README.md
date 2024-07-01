@@ -39,12 +39,13 @@ Data file types:
 
 MIRI image mosaics are presented with a pixel scale of 0.06" and have the following structure:
 
-No.	&emsp;Name  		&emsp;Type  	 	          &emsp;Format  <br>
-  0  	&emsp;PRIMARY   	 &emsp;PrimaryHDU 		&emsp;– 	  <br>
-  1  	&emsp;SCI       	 &emsp;ImageHDU    		&emsp;float32     &emsp;science image  <br>
-  2  	&emsp;ERR       	 &emsp;ImageHDU    		&emsp;float32     &emsp;error image  <br>
-  3  	&emsp;EXP       	 &emsp;ImageHDU   		&emsp;float32     &emsp;exposure time map  <br>
-  4  	&emsp;WHT       	 &emsp;ImageHDU     		&emsp;float32     &emsp;weight map  <br>
+| No.	| Name  		| Type  	 	          | Format  | 
+| ---- | -------| --------| ------- |
+|   0  	| PRIMARY   	 | PrimaryHDU 		| – 	  | - | 
+|   1  	| SCI       	 | ImageHDU    		| float32     | science image  | 
+|   2  	| ERR       	 | ImageHDU    		| float32     | error image  | 
+|   3  	| EXP       	 | ImageHDU   		| float32     | exposure time map | 
+|   4  	| WHT       	 | ImageHDU     		| float32     | weight map  | 
   
 ----------------------
 
@@ -56,48 +57,52 @@ Fluxes and uncertainties are in units of nano-Janskys.
 
 The photometric catalog is a fits file with the following structure:
 
-No.	&emsp;Name  	   		&emsp;Type <br>  	             
-0  &emsp;PRIMARY       	  &emsp;PrimaryHDU <br>	 
-1  &emsp;FILTERS   	      &emsp;BinTableHDU <br>       
-2  &emsp;SIZE      	      &emsp;BinTableHDU <br>    
-3  &emsp;CIRC      	      &emsp;BinTableHDU <br>
-4  &emsp;KRON       	  &emsp;BinTableHDU 
+| No.	| Name | Type | 
+| --- | ------ | ------- |  
+| 0  | PRIMARY       	  | PrimaryHDU | 
+| 1  | FILTERS   	      | BinTableHDU |     
+| 2  | SIZE      	      | BinTableHDU |   
+| 3  | CIRC      	      | BinTableHDU | 
+| 4  | KRON       	 | BinTableHDU | 
   
 EXT 1 contains information about the filters used and their corresponding Point Spread Functions (PSFs), including the FWHM and aperture corrections for the circular apertures used.
 
 EXT 2 contains the following:
 
-
 Description of columns:
 
-'ID'			&emsp;Observation ID <br>
-'RA'			&emsp;Source RA <br>
-'DEC'			&emsp;Source Dec  <br>
-'NPIX_DET'		&emsp;Number of pixels used for detection <br>
-'X'				&emsp;Pixel location in x direction <br>
-'Y'				&emsp;Pixel location in y direction <br>
-'XC'			&emsp;Pixel location of x centroid in detection image <br>
-'YC'			&emsp;Pixel location of x centroid in detection image <br>
-'BBOX_XMIN'		&emsp;The boundaries of the area used for detection <br>
-'BBOX_XMAX'		&emsp;"  <br>
-'BBOX_YMIN'		&emsp;"  <br>
-'BBOX_YMAX'		&emsp;" <br>
-'R_KRON'		&emsp;Kron radius (2.5x scaled) <br>
-'PA'			&emsp;Position angle of Kron aperture <br>
-'Q'				&emsp;Axial ratio of Kron aperture <br>
-'A'				&emsp;emi-major axis <br>
-'B'				&emsp;Semi-minor axis <br>
+| Name      | Description      |
+| --------- | ---------------- |
+| 'ID'			| Observation ID | 
+| 'RA'			| Source RA | 
+| 'DEC'			| Source Dec  | 
+| 'NPIX_DET'		| Number of pixels used for detection | 
+| 'X'				| Pixel location in x direction | 
+| 'Y'				| Pixel location in y direction | 
+| 'XC'			| Pixel location of x centroid in detection image | 
+| 'YC'			| Pixel location of x centroid in detection image | 
+| 'BBOX_XMIN'		| The boundaries of the area used for detection | 
+| 'BBOX_XMAX'		| "  | 
+| 'BBOX_YMIN'		| "  | 
+| 'BBOX_YMAX'		| " | 
+| 'R_KRON'		| Kron radius (2.5x scaled) | 
+| 'PA'			| Position angle of Kron aperture | 
+| 'Q'				| Axial ratio of Kron aperture | 
+| 'A'				| emi-major axis | 
+| 'B'				| Semi-minor axis | 
 
 EXT 3 contains the circular aperture photometry:
 
 
 Description of columns:
 
-'ID'					&emsp;Observation ID <br>
-'RA'					&emsp;Source RA <br>
-'DEC'					&emsp;Source Dec <br>
-\<filter\>\_\<aperture\>		&emsp;Flux densities in a given filter for a given circular aperture <br>
-\<filter\>\_\<aperture\>_en	&emsp;Flux uncertainties in a given filter for a given circular aperture
+| Name      | Description      |
+| --------- | ---------------- |
+| 'ID'					| Observation ID | 
+| 'RA'					| Source RA | 
+| 'DEC'					| Source Dec | 
+| \<filter\>\_\<aperture\>		| Flux densities in a given filter for a given circular aperture | 
+| \<filter\>\_\<aperture\>_en	| Flux uncertainties in a given filter for a given circular aperture | 
 
 Flux densities and uncertainties are given in nJy.  The apertures are CIRC3, CIRC4, CIRC5, CIRC6, CIRC7 with radii of r=0.25, 0.3, 0.35, 0.5, 0.6 arcseconds.
 
@@ -106,11 +111,13 @@ EXT 3 contains the Kron aperture photometry:
 
 Description of columns:
 
-'ID'					&emsp;Observation ID <br>
-'RA'					&emsp;Source RA <br>
-'DEC'					&emsp;Source Dec <br>
-\<filter\>\_KRON			&emsp;Flux densities in a given filter <br>
-\<filter\>\_KRON_en		&emsp;Flux uncertainties in a given filter
+| Name      | Description      |
+| --------- | ---------------- |
+| 'ID'					| Observation ID | 
+| 'RA'					| Source RA | 
+| 'DEC'					| Source Dec| 
+| \<filter\>\_KRON			| Flux densities in a given filter | 
+| \<filter\>\_KRON_en		| Flux uncertainties in a given filter | 
 
 Flux densities and uncertainties are given in nJy.  The Kron apertures are 2.5x scaled.
 
