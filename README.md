@@ -12,13 +12,9 @@ Stacey Alberts, salberts@arizona.edu, Steward Observatory, University of Arizona
 
 The Systematic Mid-Infrared Instrument Legacy Extragalactic Survey (SMILES) (PID 1207) is a Cycle 1 imaging program that obtained MIRI imaging in eight photometric bands (F560W, F770W, F1000W, F1280W, F1500W, F1800W, F2100W, F2550W) plus NIRSpec spectroscopic follow-up using the Multi-Shutter Array (MSA).  SMILES covers an area of 34.5 arcmin2 in the GOODS-S/HUDF field.  MIRI imaging was obtained via ~650-2200 s exposures, reaching 5sig point source sensitivities of 0.2-17 uJy (25.7 - 20.8 AB) in 65% encircled energy apertures (see Alberts et al., 2024 for details).  Data release 1 (DR1) includes science-ready MIRI mosaics as well as a catalog contains 3,096 sources with photometric measurements in all bands. 
 
-==========================================================================================
-
 ## Data Products
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%
 Data Release 1 (June 2024)
-%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 The SMILES data products are named according to the following convention:
 
