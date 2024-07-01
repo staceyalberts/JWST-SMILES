@@ -20,15 +20,15 @@ Data Release 1 (June 2024)
 
 The SMILES data products are named according to the following convention:
 
-hlsp_smiles_jwst_<instrument>_goodss_<filter>_<version>_<data file type>.fits
+hlsp_smiles_jwst_\<instrument\>_goodss_\<filter\>_\<version\>_\<data file type\>.fits
 
 where:
 
-<inst> is the instrument, here 'miri'
+\<inst>\ is the instrument, here 'miri'
 
-<filter> is the filter or 'multi' for the photometric catalog
+\<filter\> is the filter or 'multi' for the photometric catalog
 
-<version> is the version number ("v1.0").
+\<version\> is the version number ("v1.0").
 
 Data file types:
 
