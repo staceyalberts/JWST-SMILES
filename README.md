@@ -1,11 +1,11 @@
 # JWST-SMILES
-Repository for the JWST/MIRI SMILES multi-band survey. 
 
-README file for the Systematic Mid-Infrared Instrument Legacy Extragalactic Survey (SMILES)
+[Latest Release](https://github.com/staceyalberts/JWST-SMILES/releases/tag/v1.0)
 
-MAST webpage: https://archive.stsci.edu/hlsp/smiles/
-
-Refer to this HLSP with DOI: http://dx.doi.org/10.17909/et3f-zd57
+Repository for the JWST/MIRI SMILES multi-band survey. <br>
+README file for the Systematic Mid-Infrared Instrument Legacy Extragalactic Survey (SMILES) <br>
+MAST webpage: https://archive.stsci.edu/hlsp/smiles/ <br>
+Refer to this HLSP with DOI: http://dx.doi.org/10.17909/et3f-zd57 <br>
 
 ## Contributor
 Stacey Alberts, salberts@arizona.edu, Steward Observatory, University of Arizona
