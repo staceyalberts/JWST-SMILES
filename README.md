@@ -2,7 +2,9 @@
 Repository for the JWST/MIRI SMILES multi-band survey. 
 
 README file for the Systematic Mid-Infrared Instrument Legacy Extragalactic Survey (SMILES)
+
 MAST webpage: https://archive.stsci.edu/hlsp/smiles/
+
 Refer to this HLSP with DOI: http://dx.doi.org/10.17909/et3f-zd57
 
 ## Contributor
@@ -23,7 +25,9 @@ hlsp_smiles_jwst_<instrument>_goodss_<filter>_<version>_<data file type>.fits
 where:
 
 <inst> is the instrument, here 'miri'
+
 <filter> is the filter or 'multi' for the photometric catalog
+
 <version> is the version number ("v1.0").
 
 Data file types:
